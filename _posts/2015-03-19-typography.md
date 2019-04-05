@@ -2,7 +2,7 @@
 title: Typograhy example
 published: true
 ---
-![Test](/emerald/img/img-test.png "Test")
+![Test](/blog/img/img-test.png "Test")
 What a wonderful page
 
 # My Title
