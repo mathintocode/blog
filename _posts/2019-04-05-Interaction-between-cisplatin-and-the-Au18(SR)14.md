@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-![TOC_Au18.png](https://github.com/mathintocode/blog/tree/master/img/_posts/TOC_Au18.png "TOC")
+![TOC](https://github.com/mathintocode/blog/tree/master/img/_posts/TOC_Au18.png "TOC")
 
 
 
