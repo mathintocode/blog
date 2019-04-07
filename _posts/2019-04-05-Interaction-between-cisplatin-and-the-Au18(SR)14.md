@@ -8,4 +8,4 @@ published: true
 ---
 One can read the whole article directly on Royal Chemistry Society's journal Physical Chemistry Chemical Physics by clicking **[here.](https://pubs.rsc.org/en/content/articlelanding/2017/cp/c7cp04452f#!divAbstract "here."){target="_blank"}**
 
-<a href="google.com" target="_blank">here.</a>
+<a href="https://pubs.rsc.org/en/content/articlelanding/2017/cp/c7cp04452f#!divAbstract" target="_blank">here.</a>
