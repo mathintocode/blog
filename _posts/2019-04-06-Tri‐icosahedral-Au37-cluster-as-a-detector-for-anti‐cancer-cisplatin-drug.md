@@ -1,6 +1,7 @@
 ---
 published: true
-image: '-url'
+image: 
+  - url: /blog/img/TOC_Au37.png
 ---
 <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jrs.5498" target="_blank"> <img alt="TOC" src="/blog/img/TOC_Au37.png"> </a>
 ### Abstract
