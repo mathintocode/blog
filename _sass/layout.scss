@@ -67,8 +67,8 @@ html, body {
 
 #menu {
   height: 4px;
-  width: 5.5em;
-  background-color: lighten($text-color, 35%);
+  width: 1.5em;
+  background-color: $background-color;
   margin-top: 8px;
   &:after, &:before {
     content: "";
