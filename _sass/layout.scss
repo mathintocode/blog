@@ -171,7 +171,7 @@ background-color: $main-color;
 .post+.post:before {
     display: block;
     content: '';
-    width: 5rem;
+    width: 7rem;
     height: 1px;
     margin: 23px auto;
     background-color: lighten($text-color, 70%);
