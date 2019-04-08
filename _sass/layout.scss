@@ -123,7 +123,12 @@ html, body {
 }
 
 #header {
-	text-align: left;
+
+padding: 30px 0;
+	background-color: $main-color;
+	color: $background-color;
+  width: 100%;
+  text-align: center;
   padding: 24px 0;
   position: relative;
   a {
