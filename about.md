@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Emerald
+title: About Me
 published: true
 ---
 ## About me
