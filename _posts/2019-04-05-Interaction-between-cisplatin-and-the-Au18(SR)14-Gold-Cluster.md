@@ -6,8 +6,8 @@ images:
 <a href="https://pubs.rsc.org/en/content/articlelanding/2017/cp/c7cp04452f#!divAbstract" target="_blank"> <img alt="TOC" src="/blog/img/TOC_Au18.png"> </a>
 <div style="text-align: justify">Project developed in 2017 by <a href="https://scholar.google.com.mx/citations?user=ZjcuqsAAAAAJ&hl=en" target="_blank">Omar Palacios-Álvarez</a> and <a href="https://scholar.google.com.mx/citations?user=tuN2v40AAAAJ&hl=en" target="_blank">Alfredo Tlahuice-Flores</a>.<br>
 <ul>
-<li>[Oct, 2017]First place in the statal event "<a href="http://investigacion.uanl.mx/estudiantes-de-la-uanl-participaran-en-encuentro-nacional-de-jovenes-investigadores/" target="_blank">V Encuentro de Jóvenes Investigadores del Estado de Nuevo León</a>" in the category "Biology and Chemistry". A second note by the newspaper "El Porvenir" can be found <a href="http://elporvenir.mx/?content=noticia&id=58887" target="_blank">here.</a>"</li>
-<li>Third place in the national event by CONACyT"<a href="http://investigacion.uanl.mx/estudiantes-de-la-uanl-participaran-en-encuentro-nacional-de-jovenes-investigadores/" target="_blank">V Encuentro de Jóvenes Investigadores del Estado de Nuevo León</a>" in the category "Biology and Chemistry". [Oct, 2017]</li>
+<li>[Oct, 2017]: First place in the statal event "<a href="http://investigacion.uanl.mx/estudiantes-de-la-uanl-participaran-en-encuentro-nacional-de-jovenes-investigadores/" target="_blank">V Encuentro de Jóvenes Investigadores del Estado de Nuevo León</a>" in the category "Biology and Chemistry". A second note by the newspaper "El Porvenir" can be found <a href="http://elporvenir.mx/?content=noticia&id=58887" target="_blank">here.</a>"</li>
+<li>[Nov, 2017]: Third place in the national event by CONACyT "<a href="/blog/img/congreso_tabasco.png" target="_blank">V Encuentro Interinstitucional de Jóvenes Investigadores</a>" in the category "Biology and Chemistry". [Oct, 2017]</li>
   </ul>
 </div>
 ### Abstract
