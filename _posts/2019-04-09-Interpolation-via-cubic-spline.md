@@ -74,7 +74,29 @@ function natural_cubic_spline(x::Array{Float64}, y::Array{Float64}, η)
         resize!(x_interpolation, convert(Int64, η)-1)
         resize!(y_interpolation, convert(Int64, η)-1)
     end
-    scatter!((x_interpolation, y_interpolation), color = "black", markersize = 1)
+    scatter!((x_interpolation, y_interpolation), 
+    		color = "black", 
+            markersize = 1)
+end
+
+{% endhighlight %}
+
+{% highlight julia linenos %}
+
+function Cubic_Interpolation(points::Int64, η)
+    x = randn(points)
+    y = randn(points)
+    if issorted(x) == false
+        sorting_xy(x,y)
+    end
+    p = scatter((x,y), 
+    			xlabel = "x", 
+                ylabel = "f(x)", 
+                color = "red", 
+                markersize = 6, 
+                legend = false, 
+                ylim = [minimum(y)-1,maximum(y)+1])
+    natural_cubic_spline(x, y, points*η)
 end
 
 {% endhighlight %}
