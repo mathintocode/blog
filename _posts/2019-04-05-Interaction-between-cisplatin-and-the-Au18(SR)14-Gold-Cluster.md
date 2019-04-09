@@ -4,7 +4,7 @@ images:
   - url: /blog/img/TOC_Au18.png
 ---
 <a href="https://pubs.rsc.org/en/content/articlelanding/2017/cp/c7cp04452f#!divAbstract" target="_blank"> <img alt="TOC" src="/blog/img/TOC_Au18.png"> </a>
-<div style="text-align: justify">Project developed in 2017 by <a>[Omar Palacios-Álvarez](https://scholar.google.com.mx/citations?user=ZjcuqsAAAAAJ&hl=en) target="_blank"</a> and [Alfredo Tlahuice-Flores](https://scholar.google.com.mx/citations?user=tuN2v40AAAAJ&hl=en)</div>
+<div style="text-align: justify">Project developed in 2017 by  <a href="https://scholar.google.com.mx/citations?user=ZjcuqsAAAAAJ&hl=en" target="_blank">Omar Palacios-Álvarez</a> and <a href="https://scholar.google.com.mx/citations?user=tuN2v40AAAAJ&hl=en" target="_blank">Alfredo Tlahuice-Flores</a> </div>
 
 ### Abstract
 ---
