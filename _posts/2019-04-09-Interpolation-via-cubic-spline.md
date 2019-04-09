@@ -1,6 +1,6 @@
 ---
-published: false
+published: true
+images:
+  - url: /blog/img/interpolation_1.png
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+<img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
