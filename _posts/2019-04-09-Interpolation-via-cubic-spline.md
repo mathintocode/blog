@@ -24,7 +24,7 @@ MathJax.Hub.Queue(function() {
 
 <img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
 
-$${(x+y)_2}^2$$
+Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data.
 
 {% highlight julia linenos %}
 
