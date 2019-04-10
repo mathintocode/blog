@@ -24,7 +24,7 @@ MathJax.Hub.Queue(function() {
 
 <img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
 
-`$x^2$` or `$$x^2$$`
+$x^2$ or `$$x^2$$`
 
 {% highlight julia linenos %}
 
