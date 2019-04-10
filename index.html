@@ -11,7 +11,7 @@ published: true
 	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
        	<img src="{{post.images[0].url}}" alt="{{ include.image.alt }}" title="{{ include.image.title }}">
-	  	<p>{{ post.content | strip_html | truncatewords:25 }}</p>
+	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
 	  </li>
 
     {% endfor %}
