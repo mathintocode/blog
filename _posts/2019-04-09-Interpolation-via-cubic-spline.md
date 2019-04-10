@@ -24,7 +24,8 @@ MathJax.Hub.Queue(function() {
 
 <img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
 
-<div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data.</div>
+<div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data.
+For this, it is required a spline which is a sectioned polynomial of order $k$ differentiable $k-1$ in $[a,b]$: $S(x) \in C^(k-1)[a,b]$</div>
 
 {% highlight julia linenos %}
 
