@@ -24,7 +24,7 @@ MathJax.Hub.Queue(function() {
 
 <img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
 
-$$(x+y)^2$$
+$${(x+y)_2}^2$$
 
 {% highlight julia linenos %}
 
