@@ -34,8 +34,8 @@ Therefore, for third order:<br>
 $S(x)$: piecewise <b>cubic</b> polynomial.<br>
 $S'(x)$: piecewise <b>quadratic</b> polynomial.<br>
 $S''(x)$: piecewise <b>lineal</b> polynomial.<br>
-Since no information is known related to $S(x)$, one starts by suggesting a Lagrange interpolation for the second derivative since this is a lineal interpolation of the form $L(x) = \sum{j=0} y_{j} \prod{o \leq m \leq k} \frac{x-x_m}{x_j-x_m}$
-</div>
+Since no information is known related to $S(x)$, one starts by putting forward a Lagrange interpolation for the second derivative:<br>
+$S''_{i-1,i}(x) = S''_{i-1,i}(x_i) \frac{x-x_{i+1}}{x_i - x_{i+1}}$
 
 {% highlight julia linenos %}
 
