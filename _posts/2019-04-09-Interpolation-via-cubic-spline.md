@@ -40,7 +40,8 @@ Integrating twice:
 $$S_{i,i+1}(x) = \frac{K_i}{6} \frac{(x-x_{i+1})^3}{x_i-x_{i+1}} + \frac{K_{i+1}}{6} \frac{(x-x_i)^3}{x_{i+1}-x_i} + C_1x + C_2$$
 Redefining the constants $C_1 = \alpha - \beta$ and $C_2 = -\alpha x_{i+1} + \beta x_i$ and giving it a more symmetric structure:
 $$S_{i,i+1}(x) = \frac{K_i}{6} \frac{(x-x_{i+1})^3}{x_i-x_{i+1}} + \frac{K_{i+1}}{6} \frac{(x-x_i)^3}{x_{i+1}-x_i} + \alpha (x-x_{i+1}) + \beta (x-x_i)$$
-Given the boundary condition $S_{i,i+1}(x_i) = y_i, \alpha = \frac{y_i}{x_i-x_{i+1}} - \frac{K_i}{6}(x_i-x_{i+1})$
+Given the boundary condition $S_{i,i+1}(x_i) = y_i, \alpha = \frac{y_i}{x_i-x_{i+1}} - \frac{K_i}{6}(x_i-x_{i+1})$<br>
+Given the boundary condition $S_{i,i+1}(x_{i+1}) = y_{i+1}, \beta = \frac{y_{i+1}}{x_{i+1}-x_i} - \frac{K_{i+1}}{6}(x_{i+1}-x_i)$
 
 {% highlight julia linenos %}
 
