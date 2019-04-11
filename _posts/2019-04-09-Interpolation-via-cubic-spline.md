@@ -29,7 +29,7 @@ This spline must satisfy three basic conditions:<br>
   1. Continous function: $S_{i-1,i}(x_i) = S_{i,i+1}(x_i)  \forall  i$<br>
   2. Same slope: $S'_{i-1,i}(x_i) = S'_{i,i+1}(x_i)  \forall  i$<br>
   3. Same concavity: $S''_{i-1,i}(x_i) = S''_{i,i+1}(x_i) = K_i \forall  i$<br>
-It's possible to take 
+The polynomials can be of any order but for $k = 1$ the second and third condition aren't completely satisfied. The same goes for $k = 2$ and the third condition. Naturally, for the imposed conditions it's required $k \geq 3.$
 </div>
 
 {% highlight julia linenos %}
