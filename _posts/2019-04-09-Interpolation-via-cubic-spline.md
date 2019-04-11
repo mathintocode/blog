@@ -28,7 +28,7 @@ MathJax.Hub.Queue(function() {
 For this, it is required a spline which is a sectioned polynomial of order $k$ differentiable $k-1$ times in $[a,b]$: $S(x) \in C^{(k-1)}[a,b]$.
 This spline must satisfy three basic conditions:<br>
   1. The piecewise function must be continuous: $S_{i-1,i}(x_i) = S_{i,i+1}(x_i) \forall i$<br>
-  2. The slope at the interception points must be the same: ${dS_{i-1,i}/{dx}}(x_i) = S_{i,i+1}(x_i)$
+  2. The slope at the interception points must be the same: ${\fracc{dS_{i-1,i}}{dx}}(x_i) = S_{i,i+1}(x_i)$
 </div>
 
 {% highlight julia linenos %}
