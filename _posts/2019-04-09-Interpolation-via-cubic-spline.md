@@ -37,7 +37,7 @@ $S''(x)$: piecewise <b>lineal</b> polynomial.<br>
 Since no information is known related to $S(x)$, one starts by putting forward a Lagrange interpolation for the second derivative:<br>
 $$S''_{i,i+1}(x) = K_i \frac{x-x_{i+1}}{x_i - x_{i+1}} + K_{i+1} \frac{x-x_{i}}{x_{i+1} - x_i}$$<br>
 Integrating twice:
-$$S_{i,i+1}(x) = \frac{K_i}{6} \frac{x-(x_{i+1})}{x_i-x_{i+1}}$$
+$$S_{i,i+1}(x) = \frac{K_i}{6} \frac{(x-x_{i+1})^3}{x_i-x_{i+1}}$$
 
 
 {% highlight julia linenos %}
