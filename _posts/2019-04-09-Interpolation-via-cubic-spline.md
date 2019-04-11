@@ -24,12 +24,12 @@ MathJax.Hub.Queue(function() {
 
 <img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
 
-<div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data.For this, it is required a spline which is functioned defined piecewise by polynomials of order $k \in N$ differentiable $k-1$ times in $[a,b]$: $S(x) \in C^{(k-1)}[a,b]$. <br><br>
+<div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data.For this, it is required a spline which is functioned defined piecewise by polynomials of order $k \in N$ differentiable $k-1$ times in $[a,b]$: $S(x) \in C^{k-1}[a,b]$. <br><br>
 This spline must satisfy three basic conditions:<br>
   1. Continous function: $S_{i-1,i}(x_i) = S_{i,i+1}(x_i)  \forall  i$<br>
   2. Same slope: $S'_{i-1,i}(x_i) = S'_{i,i+1}(x_i)  \forall  i$<br>
   3. Same concavity: $S''_{i-1,i}(x_i) = S''_{i,i+1}(x_i) = K_i \forall  i$<br><br>
-The polynomials can be of any order but for $k = 1$ the second and third condition aren't completely satisfied. The same goes for $k = 2$ and the third condition. Naturally, for the imposed conditions it's required $k \geq 3.$
+The polynomials can be of any order but for $k = 1$ the second and third condition aren't completely satisfied. The same goes for $k = 2$ and the third condition. Naturally, for the imposed conditions it's required $k \geq 3$, but for this specific case, we'll stick with this lowest possible order.
 </div>
 
 {% highlight julia linenos %}
