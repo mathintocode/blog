@@ -29,6 +29,7 @@ For this, it is required a spline which is a sectioned polynomial of order $k$ d
 This spline must satisfy three basic conditions:<br>
   1. The piecewise function must be continuous: $S_{i-1,i}(x_i) = S_{i,i+1}(x_i)  \forall  i$<br>
   2. The slope at the interception points must be the same: $S'_{i-1,i}(x_i) = S'_{i,i+1}(x_i)  \forall  i$<br>
+  3. The concavity at the interception points must be the same: $S''_{i-1,i}(x_i) = S''_{i,i+1}(x_i) = K_i \forall  i$<br>
 </div>
 
 {% highlight julia linenos %}
