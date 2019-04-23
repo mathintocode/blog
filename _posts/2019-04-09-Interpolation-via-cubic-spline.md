@@ -161,3 +161,5 @@ function Cubic_Interpolation(η)
 end
 
 {% endhighlight %}
+ 
+Therefor, calling Cubic_Interpolation(1E3) one gets the picture at the beginning of the post.
