@@ -162,4 +162,22 @@ end
 
 {% endhighlight %}
  
-Therefor, calling Cubic_Interpolation(1E3) one gets the picture at the beginning of the post.
+Calling Cubic_Interpolation(1E3) generates the interpolation at the beginning of the post.
+  
+{% highlight julia linenos %}  
+
+function Circular_Dichroism(δ)
+    κ = readdlm("~/Circular_Dichroism.txt", ' ', Float64)
+    global x_read = κ[:,1]
+    global y_read = κ[:,2]
+    ϐ = size(x_read)
+    x = Array{Float64}(undef, convert(Int64, floor(ϐ[1]/δ)))
+    y = Array{Float64}(undef, convert(Int64, floor(ϐ[1]/δ)))
+    for i = 1:convert(Int64, floor(ϐ[1]/δ))
+        x[i] = x_read[δ*i]
+        y[i] = y_read[δ*i]
+    end
+    return x, y
+end
+  
+{% endhighlight %}
