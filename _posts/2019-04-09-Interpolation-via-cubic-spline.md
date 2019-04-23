@@ -59,7 +59,7 @@ Requiring the spline to have continuous first derivatives $S'_{i-1,i}(x_i) = S'_
 where the right hand side is proportional to the difference of the slopes.
 By solving this system of $N$ linear equations, one finds the values of all the $K_i$ elements.
   
-
+This has been programmed using Julia 1.1.0, where the Plots and LinearAlgebra libraries have been used.
   
 {% highlight julia linenos %}
 
@@ -68,22 +68,8 @@ using LinearAlgebra
 
 {% endhighlight %}
 
-{% highlight julia linenos %}
-
-function sorting_xy(x, y)
-    size(x) == size(y) ? tuple_n = size(x) : error("Arrays must be the same size.")
-    N = tuple_n[1]
-    for i = N:-1:1, j = 1:i-1
-        if x[j] > x[j+1]
-            Γ, Λ = x[j], y[j]
-            x[j], y[j] = x[j+1], y[j+1]
-            x[j+1], y[j+1] = Γ, Λ
-        end
-    end
-end
-
-{% endhighlight %}
-
+By defining the <b>natural_cubic_spline</b> function, it solves the system of linear equations by using the matrix A and array B in order to find all elements con $K \in K_i$ which will be used with the data to interpolate found in arrays <b>x</b> and <b>y</b>. Here, $\eta$ is the amount of interpolation values between each $x_i$ and $x_{i+1}$.
+  
 {% highlight julia linenos %}
 
 function natural_cubic_spline(x::Array{Float64}, y::Array{Float64}, η)
@@ -109,8 +95,7 @@ function natural_cubic_spline(x::Array{Float64}, y::Array{Float64}, η)
     end
     Δ = abs((x[end]-x[1])/η)
     ξ = x[1]+Δ
-    i = 1
-    r = 1
+    i, r = 1, 1
     x_interpolation = Array(zeros(Float64, convert(Int64, η)))
     y_interpolation = Array(zeros(Float64, convert(Int64, η)))
     while ξ <= x[end]
@@ -135,6 +120,27 @@ function natural_cubic_spline(x::Array{Float64}, y::Array{Float64}, η)
 end
 
 {% endhighlight %}
+  
+Arrays <b>x_interpolation</b> and <b>y_interpolation</b> contain all interpolation values and are plotted.
+A sorting algorithm is defined as well in case initial information is not correctly ordered.
+  
+{% highlight julia linenos %}
+
+function sorting_xy(x, y)
+    size(x) == size(y) ? tuple_n = size(x) : error("Arrays must be the same size.")
+    N = tuple_n[1]
+    for i = N:-1:1, j = 1:i-1
+        if x[j] > x[j+1]
+            Γ, Λ = x[j], y[j]
+            x[j], y[j] = x[j+1], y[j+1]
+            x[j+1], y[j+1] = Γ, Λ
+        end
+    end
+end
+
+{% endhighlight %}
+
+
 
 {% highlight julia linenos %}
 
