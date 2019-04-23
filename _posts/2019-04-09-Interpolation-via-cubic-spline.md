@@ -44,13 +44,10 @@ Given the boundary condition $S_{i,i+1}(x_i) = y_i \Rightarrow \alpha = \frac{y_
 Given the boundary condition $S_{i,i+1}(x_{i+1}) = y_{i+1} \Rightarrow \beta = \frac{y_{i+1}}{x_{i+1}-x_i} - \frac{K_{i+1}}{6}(x_{i+1}-x_i)$
 <br>This is the function that'll interpolate the data, but the values for $K_i, K_{i+1}$ are still unknown.
 
-\documentclass{article}
 \usepackage{amsmath}
-\begin{document}
 \begin{align*}
 $$S_{i,i+1}(x) = \frac{K_i}{6} (\frac{(x-x_{i+1})^3}{x_i-x_{i+1}} -(x-x_{i+1})(x_i-x_{i+1})) - \frac{K_{i+1}}{6} (\frac{(x-x_i)^3}{x_i-x_{i+1}} - (x-x_i)(x_i-x_{i+1})) + \frac{y_i(x-x_{i+1})-y_{i+1}(x-x_i)}{x_i-x_{i+1}}$$
 \end{align*}
-\end{document}
   
 {% highlight julia linenos %}
 
