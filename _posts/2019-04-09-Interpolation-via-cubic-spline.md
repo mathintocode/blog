@@ -50,13 +50,7 @@ Given the boundary condition $S_{i,i+1}(x_{i+1}) = y_{i+1} \Rightarrow \beta = \
 \end{split}
 \end{align}
   
-\begin{align}
-  \begin{split}
-      a & = b + c - d \\
-        & \quad + e - f
-  \end{split} \\
-  g + h & = i
-\end{align}
+
   
 {% highlight julia linenos %}
 
