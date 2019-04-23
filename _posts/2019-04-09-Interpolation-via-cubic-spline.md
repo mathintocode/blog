@@ -24,7 +24,7 @@ MathJax.Hub.Queue(function() {
 
 <img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
 
-<div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data.For this, it is required a spline which is functioned defined piecewise by polynomials of order $k \in N$ differentiable $k-1$ times in $[a,b]$: $S(x) \in C^{k-1}[a,b]$. <br><br>
+<div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data. For this, it is required a spline which is functioned defined piecewise by polynomials of order $k \in N$ differentiable $k-1$ times in $[a,b]$: $S(x) \in C^{k-1}[a,b]$. <br><br>
 This spline must satisfy three basic conditions:<br>
   1. Continous function: $S_{i-1,i}(x_i) = S_{i,i+1}(x_i)  \forall  i$<br>
   2. Same slope: $S'_{i-1,i}(x_i) = S'_{i,i+1}(x_i)  \forall  i$<br>
@@ -56,6 +56,8 @@ Requiring the spline to have continuous first derivatives $S'_{i-1,i}(x_i) = S'_
 \quad  = 6(\frac{y_{i+1}-y_i}{x_{i+1}-x_i}-\frac{y_i-y_{i-1}}{x_i-x_{i-1}})
 \end{split}
 \end{align}
+where the right hand side is proportional to the difference of the slopes.
+By solving this system of $N$ linear equations, one finds the values of all the $K_i$ elements.
   
 
   
