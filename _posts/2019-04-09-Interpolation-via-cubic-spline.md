@@ -49,6 +49,12 @@ Given that $S_{i,i+1}(x_{i+1}) = y_{i+1} \Rightarrow \beta = \frac{y_{i+1}}{x_{i
   \quad - (x-x_i)(x_i-x_{i+1})) + \frac{y_i(x-x_{i+1})-y_{i+1}(x-x_i)}{x_i-x_{i+1}}
 \end{split}
 \end{align}
+Requiring the spline to have continuous first derivatives $S'_{i-1,i}(x_i) = S'_{i,i+1}(x_i) (2nd condition previously mentioned) one finds the relation:
+\begin{align}
+ \begin{split}
+ K_{i+1}(x_{i}-x_{i+1})+2k_i(x_{i-1}-x_{i+1})+K_{i-1}(x_{i-1}-x_{i})=6
+\end{split}
+\end{align}
   
 
   
