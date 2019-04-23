@@ -140,7 +140,7 @@ end
 
 {% endhighlight %}
 
-Making a function called <b>Cubic_Interpolation</b> the <b>x</b> and <b>y</b> values are given, sorted, interpolated and finally plotted.Here, $\eta$ is the amount of interpolation values between each $x_i$ and $x_{i+1}$. 
+Making a function called <b>Cubic_Interpolation</b> the <b>x</b> and <b>y</b> values are given, sorted, interpolated and finally plotted.Here, $\eta$ is the amount of interpolation values between $a$ and $b$. 
 
 {% highlight julia linenos %}
 
