@@ -68,7 +68,7 @@ using LinearAlgebra
 
 {% endhighlight %}
 
-By defining the <b>natural_cubic_spline</b> function, it solves the system of linear equations by using the matrix A and array B in order to find all elements con $K \in K_i$ which will be used with the data to interpolate found in arrays <b>x</b> and <b>y</b>. Here, $\eta$ is the amount of interpolation values between each $x_i$ and $x_{i+1}$.
+By defining the <b>natural_cubic_spline</b> function, it solves the system of linear equations by using the matrix A and array B in order to find all elements con $K \in K_i$ which will be used with the data to interpolate found in arrays <b>x</b> and <b>y</b>.
   
 {% highlight julia linenos %}
 
@@ -140,13 +140,13 @@ end
 
 {% endhighlight %}
 
-
+Making a function called <b>Cubic_Interpolation</b> the <b>x</b> and <b>y</b> values are given, sorted, interpolated and finally plotted.Here, $\eta$ is the amount of interpolation values between each $x_i$ and $x_{i+1}$. 
 
 {% highlight julia linenos %}
 
-function Cubic_Interpolation(points::Int64, η)
-    x = randn(points)
-    y = randn(points)
+function Cubic_Interpolation(η)
+	x = [0.9, 1.3, 1.9, 2.1, 2.6, 3.0, 3.9, 4.4, 4.7, 5.0, 6.0, 7.0, 8.0, 9.2, 10.5, 11.3, 11.6, 12.0, 12.6, 13.0, 13.3];
+    y = [1.3, 1.5, 1.85, 2.1, 2.6, 2.7, 2.4, 2.15, 2.05, 2.1, 2.25, 2.3, 2.25, 1.95, 1.4, 0.9, 0.7, 0.6, 0.5, 0.4, 0.25];
     if issorted(x) == false
         sorting_xy(x,y)
     end
@@ -157,7 +157,7 @@ function Cubic_Interpolation(points::Int64, η)
                 markersize = 6, 
                 legend = false, 
                 ylim = [minimum(y)-1,maximum(y)+1])
-    natural_cubic_spline(x, y, points*η)
+    natural_cubic_spline(x, y, η)
 end
 
 {% endhighlight %}
