@@ -1,4 +1,7 @@
+---
 published: true
+images:
+---
 
 ## Markov Chain Monte Carlo for the Canonical Ensemble
 
