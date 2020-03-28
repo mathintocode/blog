@@ -24,6 +24,7 @@ MathJax.Hub.Queue(function() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 <img alt="Interpolation" src="/blog/img/NVT_ChemicalPotentialConvergence.png"> 
+## Markov Chain Monte Carlo for the Canonical Ensemble
 
 Semi-interactive code for simulations in the *NVT* ensemble according to the Metropolis' acceptance/rejection criteria derived from the detailed balance condition of the ergodic markov chain proposed.
 
