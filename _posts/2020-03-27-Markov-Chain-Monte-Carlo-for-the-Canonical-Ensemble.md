@@ -37,7 +37,7 @@ where the state $\nu$ is generated from state $\mu$ by displacing a molecule $i$
 
 Acceptance of this new state is subject to the probability:
 
-$A(S_j \rightarrow S_i) = min\{1, e^{-\beta(E_i - E_j)}\}$.
+$A(S_j \rightarrow S_i) = min(1, e^{-\beta(E_i - E_j)})$.
 
 The algorithm is summarized in five simple steps:
 
@@ -63,4 +63,4 @@ A simple and semi-interactive execution has been designed for those not familiar
 
 This generates output files with the energy, chemical potential and radial distribution function evolution of the system along the simulation, as well as their corresponding plots.
 
-![Chemical Potential Convergence](/blog/img/NVT_ChemicalPotentialConvergence.png)
+Code found at [my personal github repository.](https://github.com/omaraalvarez/Canonical)
