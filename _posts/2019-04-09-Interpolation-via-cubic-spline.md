@@ -1,7 +1,7 @@
 ---
 published: true
 images:
-  - url: /blog/img/interpolation_1.png
+  - url: /blog/img/interpolation.png
 ---
 <style TYPE="text/css">
 code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
@@ -22,7 +22,7 @@ MathJax.Hub.Queue(function() {
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
-<img alt="Interpolation" src="/blog/img/interpolation_1.png"> 
+<img alt="Interpolation" src="/blog/img/interpolation.png"> 
 
 <div style="text-align: justify">Whenever one has a set of discrete data points given by sampling or experimentation, they correspond to the values of a certain function. Since we don't know the complete set of values, one needs to <b>interpolate</b> in order to estimate the value of the function between the known data. For this, it is required a spline which is functioned defined piecewise by polynomials of order $k \in N$ differentiable $k-1$ times in $[a,b]$: $S(x) \in C^{k-1}[a,b]$. <br><br>
 This spline must satisfy three basic conditions:<br>

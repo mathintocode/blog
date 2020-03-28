@@ -1,8 +1,8 @@
 ---
 published: true
 images:
-  - url: /blog/img/Displacement_Image.png
   - url: /blog/img/NVT_ChemicalPotentialConvergence.png
+  - url: /blog/img/Displacement_Image.png
 ---
 <style TYPE="text/css">
 code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
@@ -24,7 +24,6 @@ MathJax.Hub.Queue(function() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 <img alt="Interpolation" src="/blog/img/NVT_ChemicalPotentialConvergence.png"> 
-## Markov Chain Monte Carlo for the Canonical Ensemble
 
 Semi-interactive code for simulations in the *NVT* ensemble according to the Metropolis' acceptance/rejection criteria derived from the detailed balance condition of the ergodic markov chain proposed.
 
@@ -55,7 +54,12 @@ Code has been designed with succesful parameters as compared with official repor
 
 A simple and semi-interactive execution has been designed for those not familiar with the Julia language, where the density and temperature are taken as parameters, i. e., a system with $\rho^* = 0.1$ and $T^* = 1.5$:
 
+
+{% highlight julia linenos %}
+
     julia Canonical.jl 0.1 1.5
+
+{% endhighlight %}
 
 This generates output files with the energy, chemical potential and radial distribution function evolution of the system along the simulation, as well as their corresponding plots.
 
